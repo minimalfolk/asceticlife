@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ascetic Life - Coming Soon</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Inline CSS -->
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Lora', serif;
+            background-image: url('https://media-hosting.imagekit.io//cf34b2a3868746bd/pexels-anete-lusina-6331032.jpg?Expires=1832077181&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=BB9qKTCbO53bLCnbDeHT1NFczlVnxEomtO2uzViUUhUyqtXxy4uF03WOyL2-ch-DXOR632TcrC4vcROAlmdcL7D3oTVcLOFZIZO4zQ1Il7CA0Cp64htAXZr8uMIsn2rtJwZVAYU~3-C~qkUlAvnXwT80tVmLWDiyUQjKcZbqp7BLfQ57xLkkgpKRLbxc7bxTh-V9kV53hwi8cNk-qvv9b5CQxLaKIVDSZMPVTz60hkor9FsIQA68hL~~GGX40T5EVXejKFPrzZbKHlg4OwuhJLTwF2yh7U0AD9ZjPvDksip7sB8DuaY~tL8U1fYyFjqH4OIFNWbTGDteGi47CZZcyA__');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Logo */
+        .logo h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Animated "Coming Soon" with Continuous Typing */
+        .coming-soon {
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #fff;
+            margin-top: 20px;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 4s steps(25) infinite, blink-caret 0.75s step-end infinite;
+        }
+
+        /* Typing Animation */
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        /* Blinking Cursor Animation */
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        /* Call to Action Section */
+        .cta {
+            margin-top: 40px;
+            font-size: 1.25rem;
+            color: #fff;
+            font-family: 'Lora', serif;
+        }
+
+        .cta input {
+            padding: 12px;
+            width: 250px;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            margin-right: 10px;
+            transition: border-color 0.3s ease;
+        }
+
+        .cta input:focus {
+            border-color: #333;
+        }
+
+        .cta button {
+            padding: 12px 20px;
+            font-size: 1rem;
+            border: none;
+            background-color: #ff6700;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #cc5500;
+        }
+
+        /* Social Media Links */
+        .socials {
+            margin-top: 40px;
+        }
+
+        .social-icon {
+            font-size: 2.5rem;
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            color: #ff6700;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
+            .logo h1 {
+                font-size: 3rem;
+            }
+
+            .coming-soon {
+                font-size: 2.5rem;
+            }
+
+            .cta input {
+                width: 80%;
+            }
+
+            .cta button {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo">
+        <h1>Ascetic Life</h1>
+    </div>
+
+    <!-- Continuous Typing "Coming Soon" -->
+    <div class="coming-soon">
+        <p>Coming Soon...</p>
+    </div>
+
+    <!-- Call to Action (Signup Form) -->
+    <div class="cta">
+        <p>Be the first to know when we launch. Get exclusive updates!</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Notify Me</button>
+        </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="socials">
+        <p>Follow us:</p>
+        <a href="https://instagram.com/asceticlife.in" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+</body>
+</html>
